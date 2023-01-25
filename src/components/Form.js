@@ -32,7 +32,7 @@ function handleChange(event) {
         }
     })
 }
-
+console.log("hi")
 function handleSubmit(event) {
   event.preventDefault()
   Axios({
