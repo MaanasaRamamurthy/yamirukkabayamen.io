@@ -16,15 +16,7 @@ export default function ReturnCheckout(props) {
 
  
   useEffect(() => {
-    // Create PaymentIntent as soon as the page loads
-  //   let amt = 0
-  // for(let i = 0; i<props.Cat.length; i++){
-  //   if(props.Cat[i].toggle === true){
-  //         amt = props.Cat[i].cost
-          
-  //   }
-    
-  // }
+
     fetch("http://localhost:80/api/create.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -32,15 +24,16 @@ export default function ReturnCheckout(props) {
       })
       .then((res) => res.json())
       .then((data) => setClientSecret(data.clientSecret));
+// Axios({
+//         method: 'POST',
+//         headers: { "Content-Type": "application/json" },
+//         url: 'http://localhost:80/api/create.php',
+//         data: JSON.stringify({ items: [{ amount: 10000}] }),
+//       }) .then((res) => res.json())
+//       .then((data) => setClientSecret(data.clientSecret));
   }, []);
   
-  // Axios({
-  //   method: 'POST',
-  //   headers: { "Content-Type": "application/json" },
-  //   url: 'http://localhost:80/api/index.php',
-  //   data: JSON.stringify({ items: [{ id: "xl-tshirt" }] }),
-  // }) .then((res) => res.json())
-  // .then((data) => setClientSecret(data.clientSecret));
+
 
   const appearance = {
     theme: 'stripe',
