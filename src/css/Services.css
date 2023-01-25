@@ -1,0 +1,143 @@
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5em 0;
+}
+.service{
+    border: 1px solid #EFA10B;
+    border-radius: 10px;
+    margin: 0.75em;
+    min-height: 19em;
+    backface-visibility: hidden;
+    width: 25em;
+    /* flex-basis: 100px; */
+    /* max-width: 100%; */
+    
+    /* display: flex;
+    flex-direction: column; */
+}
+.service-number{
+    font-size: 3em;
+    margin: 0.25em 0;
+    padding: 0px 0.5em;
+    color: gray;
+}
+.name{
+    margin: 0;
+    font-size: 1.5em;
+    padding: 0 1em;
+}
+.desc{
+    text-align: center;
+    margin: 1em;
+    min-height: 6em;
+    overflow: hidden;
+    max-height: 6em;
+}
+.service-button{
+    display: flex;
+    justify-content: space-around;
+}
+.button-size{
+    margin: auto;
+}
+.go-to-channel{
+    text-align: center;
+    margin: 3em 0 0 0;
+}
+.learn-more{
+    height: 2.5em;
+    border: 2px solid #EFA10B;
+    background: white;
+    color: #EFA10B;
+}
+.booking-service{
+    height: 2.5em;
+    /* border: 2px solid #EFA10B; */
+    background: #EFA10B;
+    color: white;
+}
+.serviceContainer{
+    margin: 0 auto;
+    padding: 7em 0;
+}
+.servicesPage{
+    background-color: #EFEFEF;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    
+    padding: 7em 0;
+}
+.serviceDesc{
+    max-width: 100%;
+    min-width: 60%;
+}
+.cat-container{
+    background-color: #EFA10B;
+    border-radius: 3px;
+    width: 20em;
+    /* min-width: 30%; */
+    max-width: 100%;
+    margin: 2em auto;
+    min-height: 20em;
+  
+    
+}
+.col1{
+    width: 26%;
+}
+.col2{
+    width: 50%;
+}
+.Cat{
+    width: 80%;
+    border-radius: 3px;
+    background-color: #EFEFEF;
+    box-shadow: 2px 2px 14px rgba(0,0,0,0.15);
+    margin: 2em auto;
+}
+.List{
+    display: flex;
+    flex-direction: column;
+}
+
+/* (min-width: 768px) and (max-width: 991px) */
+/* @media (max-width: 767px) */
+@media screen and (max-width: 420px) {
+    .service{
+        width: 100%;
+    }
+    .service-button{
+        flex-wrap: wrap;
+    }
+    .service-button a{
+        width: 90%;
+    }
+    .button-size{
+        width: 100%;
+       
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 960px){
+.col1{
+    width: 45%;
+}
+.cat-container{
+    width: 15em;
+}
+}
+
+@media screen and (max-width: 650px){
+    .col1{
+        width: 100%;
+    }
+    .col2{
+        width: 90%;
+    }
+    .cat-container{
+        width: 15em;
+    }
+}

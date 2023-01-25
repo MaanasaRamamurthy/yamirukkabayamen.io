@@ -1,0 +1,27 @@
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table{
+    width: 95%;
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+thead{
+    background-color: antiquewhite;
+}
+th{
+    height: 4em;
+}
+tr{
+    height: 3em;
+    min-height: 3em;
+    background: lightgray;
+}
+td{
+    text-align: center;
+}
+.tableContainer{
+    padding: 4em;
+}

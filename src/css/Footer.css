@@ -1,0 +1,131 @@
+      /* for desktop */
+      .whatsapp_float  {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background: #25d366 !important;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .whatsapp-icon {
+        margin-top: 16px;
+        background: #25d366 !important;
+    }
+
+    /* for mobile */
+    @media screen and (max-width: 767px) {
+        .whatsapp-icon {
+            margin-top: 10px;
+        }
+
+        .whatsapp_float {
+            width: 40px;
+            height: 40px;
+            bottom: 20px;
+            right: 10px;
+            font-size: 22px;
+        }
+    }
+    .icons{
+        display: flex;
+        /* justify-content: flex-end; */
+        align-items: center;
+        color: white;
+    }
+    a{
+        margin: 0.45em 0;
+    }
+    img.author{
+        border-radius: 50% !important
+    }
+    .authordetails{
+        align-items: center;
+        display: flex;
+        margin:1em;
+       flex-direction: column;
+        justify-content: space-evenly;
+        color: white;
+    }
+    .footer{
+        background-color: #023020;
+        /* display: flex;
+        justify-content: space-evenly;
+       color: white;
+        padding-top: 2em;    
+        flex-wrap: wrap;       */
+    }
+    .sub-footer{
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        padding: 3em 0;
+        margin: 0 3em;
+        flex-wrap: wrap;
+      
+    }
+    .footer-col{
+        margin: 1em;
+        width: 20%;
+    }
+    .div-footer-anchor{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-footer{
+        text-align: left;
+    }
+    .footer-anchor{
+        color:white;
+        text-decoration: none;
+    }
+    .footer-anchor:hover{
+        color:#EFA10B;
+    }
+
+    @media screen and (max-width:1400px){
+        .footer-col{
+            width: 40%;
+        }
+    }
+    @media screen and (min-width: 953px) and (max-width:1400px){
+        .footer-col{
+            width: 40%;
+        }
+        .sub-footer{
+            margin: 0 5em;
+        }
+    }
+    @media screen and (min-width:580px) and (max-width:953px){
+        .footer-col{
+            margin: 1em 0;
+        }
+        .sub-footer{
+            margin: 0 1em;
+        }
+    }
+    @media screen and (min-width:380px) and (max-width:580px){
+        .footer-col{
+            width: 100%;
+            /* margin: 1em 4em; */
+        }
+        .sub-footer{
+            margin: 0em 4em;
+        }
+    }
+    @media screen and (max-width:380px){
+        .footer-col{
+            width: 100%;
+            margin: 1em 0.2em;
+            /* margin: 1em 2em; */
+        }
+        .sub-footer{
+            margin: 0em 0.5em;
+        }
+    }
